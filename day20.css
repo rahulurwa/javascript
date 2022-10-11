@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* .btn{
+    position:absolute;
+    top: 50%;
+    height: 40%;
+    transform: translate(-50% ,50%);
+    background-color: #fff;
+    padding: 15px 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+} */
+
+/* img{
+    width: 100%;
+    height: auto;
+} */
+
+/* body{
+    background-color: rgba(0, 0, 0, 0.363);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#navSec{
+    height: 80px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgba(17, 17, 17, 0.557);
+    border-bottom: 1px solid orange;
+}
+nav ul{
+    height: inherit;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+}
+nav ul > li{
+    height: inherit;
+}
+nav ul > li>a{
+    height: inherit;
+        position: relative;
+    top: 25px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+nav ul > li>a:hover{
+    background-color: rgba(37, 37, 37, 0.772);
+}
+#mainDiv{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 100px;
+    left: 85px;
+}
+.div1{
+    height: 300px;
+    width: 200px;
+    background-color: white;
+    color: rgba(183, 61, 61, 0.934);
+    border-radius: 10px;
+    border: none;
+    position: absolute;
+    top: 10px;
+    left: 72px;
+}
+.div2{
+    height: 300px;
+    width: 200px;
+    background-color: white;
+    color: rgba(199, 91, 91, 0.934);
+    border-radius: 10px;
+    border: none;
+    position: absolute;
+    top: 10px;
+    left: 420px;
+}
+.div3{
+    height: 300px;
+    width: 200px;
+    background-color: white;
+    color: rgba(228, 184, 184, 0.934);
+    border-radius: 10px;
+    border: none;
+    position: absolute;
+    top: 10px;
+    left: 760px;
+}
+.div4{
+    height: 300px;
+    width: 200px;
+    background-color: white;
+    color: rgba(177, 72, 72, 0.934);
+    border-radius: 10px;
+    border: none;
+    position: absolute;
+    top: 10px;
+    left: 1112px;
+}
+.drop1{
+    display: none;
+}
+.drop2{
+    display: none;
+}
+.drop3{
+    display: none;
+}
+.drop4{
+    display: none;
+} */
+
+
+/* task */
+body{
+    background-color:rgb(249, 125, 125);
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+article > span{
+    position: relative;
+    left: 0px;
+    top: 300px;
+}
+
+
+article > input {
+    position: relative;
+    left: 0px;
+    top: 300px;
+    padding: 10px;
+    margin: 10px
+}
+
+article > button {
+    position: relative;
+    left: 60px;
+    top: 300px;
+    padding: 10px;
+    margin: 10px
+}
+
+.active{
+    background-color: brown;
+}

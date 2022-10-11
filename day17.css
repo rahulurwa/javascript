@@ -1,0 +1,42 @@
+/* *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#mainsection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container{
+    background-color: antiquewhite;
+    background-color: aqua;
+}
+
+
+.course-image{
+    width: 300px;
+    height: 200px;
+} */
+
+
+
+/* #mainSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+#mainSection > div{
+    width: 300px;
+    height: 400px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: bisque;
+} */
