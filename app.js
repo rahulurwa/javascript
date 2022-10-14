@@ -1,82 +1,113 @@
-// let x = {
-//     username: "manu",
-//     company: "tyss",
-//     details: function () {
-//         console.log(this);
-//     },
-//     detailsWithArrow: () => {
-//         console.log(this);
-//     },
+// let section = document.querySelector("section");
+// let article = document.querySelector("article");
+// console.log(section);
+
+// let p = document.createElement("p");
+// p.textContent = "para";
+
+
+//to add any tag  before or after use this method
+// section.insertBefore(p, article);
+
+// section.insertAdjacentElement("beforebegin", p);
+// section.insertAdjacentElement("afterbegin", p);
+// section.insertAdjacentElement("beforeend", p);
+// section.insertAdjacentElement("afterend", p);
+// section.insertAdjacentText("afterbegin", "shashi");
+// section.insertAdjacentHTML("afterbegin","<h1>shahsi</h1>")
+
+
+
+
+// //to add read file
+// let inputFile = document.querySelector("input");
+// //add change event to file input
+// inputFile.addEventListener("change", e => {
+//     //fetch FileList from input type file
+//     let file = e.target.files[0];   //blob file object
+//     //add fileReader to read blob
+//     let reader = new FileReader();
+//     //add onload event to read blob
+//     reader.onload = _ => {
+//         console.log(reader.result);
+//     };
+//     //convert file into data URL
+//     reader.readAsDataURL(file);
+// });
+
+
+
+// //ajax request   connecting one server to one more server
+// let AjaxRequest = new XMLHttpRequest();
+// let URL = "https://api.github.com/users";  //API END POINT
+// // console.log(URL);
+// AjaxRequest.open("GET", URL);
+// AjaxRequest.onload = function () {
+//     let data = JSON.parse(this.response);
+//     let output = "";
+//     for (let user of data) {
+//         output += `
+//         <div>
+//         <img src=${user.avatar_url}/>
+//         <h1> ${user.login}</h1>
+//         <a href=${user.html_url} target="_blank"/>View Profile</a>
+//         </div>`;
+//     }
+//     document.getElementById("template").innerHTML = output;
 // };
-// x.details();                         //normal function will always target current object
-// x.detailsWithArrow();                //arrow function will always target window object
+// AjaxRequest.send();
 
 
 
-//call method******
-// let shashiObject = {
-//     name: "shashi",
-//     amount: 1000,
+// let AjaxRequest = new XMLHttpRequest();
+// let URL = "https://fakestoreapi.com/products"; //API END POINT
+// // console.log(URL);
+// AjaxRequest.open("GET", URL);
+// AjaxRequest.onload = function () {
+//   let data = JSON.parse(this.response);
+//   let output = "";
+//   for (let user of data) {
+//     output += `
+//         <div>
+//         <img src=${user.avatar_url}/>
+//         <h1> ${user.login}</h1>
+//         <a href=${user.html_url} target="_blank"/>View Profile</a>
+//         </div>`;
+//   }
+//   document.getElementById("template").innerHTML = output;
 // };
+// AjaxRequest.send();
 
-// let manuObject = {
-//     name: "manu",
-//     amount: 10000,
+
+
+// let AjaxRequest = new XMLHttpRequest();
+// let URL ="https://jsonplaceholder.typicode.com/todos/1"; //API END POINT
+// // console.log(URL);
+// AjaxRequest.open("GET", URL);
+// AjaxRequest.onload = function () {
+//   let data = JSON.parse(this.response);
+//   let output = "";
+//   for (let user of data) {
+//     output += `
+//         <div>
+//         <h1> ${}</h1>
+//         <a href=${user.html_url} target="_blank"/>View Profile</a>
+//         </div>`;
+//   }
+//   document.getElementById("template").innerHTML = output;
 // };
-
-// let dixithObject = {
-//     name: "dixith",
-//     amount: 500,
-// };
-
-// let windowObject = window;
-
-// function callAnyObject() {
-//     console.log(`i need money from ${this.name} amount is ${this.amount}`);
-// }
-// function method call CALL method
-// callAnyObject.call(manuObject);
+// AjaxRequest.send();
 
 
-
-//call , apply and bind using normal function
-// let obj1 = {
-//     num: 100,
-// };
-
-// let obj2 = {
-//     num:1000,
-// }
-
-// function getTotalValue(num1, num2) {
-//     return this.num + num1 + num2;
-// }
-// let totalCall = getTotalValue.call(obj2, 100, 200);
-// let totalApply = getTotalValue.apply(obj2, [100, 200]);        //always should be called in array for apply method
-// let totalBind = getTotalValue.bind(obj2, 100, 100);
-// console.log(totalCall);
-// console.log(totalApply);
-// console.log(totalBind());
-
-
-
-//we cannot use call, apply and bind using arrow functions
-// let obj1 = {
-//   num: 100,
-// };
-
-// let obj2 = {
-//   num: 1000,
-// };
-
-// let x= getTotalValue((num1, num2) => {
-//   return this.num + num1 + num2 ;
+// using e6 feature
+// window.fetch("https://fakestoreapi.com/products").then(data => {
+//     //readable stream
+//     //convert stream into JSON
+//     data.json().then(product => {
+//         console.log(product);
+//     });
 // })
-// let totalCall = getTotalValue.call(obj2, 100, 200);
-// let totalApply = getTotalValue.apply(obj2, [100, 200]);      //always should be called in array for apply method
-// let totalBind = getTotalValue.bind(obj2, 100, 100);
-// console.log(totalCall);
-// console.log(totalApply);
-// console.log(totalBind());
-
-
+//     .catch()
+//     .finally(_ => {
+//         console.log("finally data");
+//     });

@@ -1,0 +1,44 @@
+/* /* *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+} */
+
+
+ /* for parent and children relation
+ul{
+   display: flex;
+   flex-direction: column;
+   list-style: none;
+}
+
+li{
+    background-color: rgb(220, 227, 234);
+    margin: 5px;
+    padding: 10px;
+    border-bottom: 2px solid black;
+} */
+/* 
+#delete{
+    float: right;
+    background-color: red;
+    padding: 3px 12px;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+}
+
+table{
+    width: 85%;
+    margin:0 auto;
+    padding: 10px;
+    background-color: #efefef;
+}
+
+
+td,
+th,
+tr{
+    border: 1px solid #111;
+    width: auto;
+} */
